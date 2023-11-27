@@ -1,6 +1,6 @@
-# esw_water_footprints
+# esw_environmental-economic_accounting_water
 
-This repository contains data and scripts used for analysis in IADB TN #####, Water Footprint Estimation in Latin America, as well as the structural decomposition analysis preformed for White Paper XXXX. 
+This repository contains data and scripts used for analysis in IADB TN #####, Water Footprint Estimation in Latin America, as well as the structural decomposition analysis performed for Working Paper XXXX. 
 
 ## Data
 All data inputs can be found in the folder "OrigialData":
@@ -9,6 +9,6 @@ All data inputs can be found in the folder "OrigialData":
 - Deflation factors for currency normalization are available in the Deflation_factors.xlsx
 
 ## Scripts
-The water_footprints_sda.R script contains the script to generate the input-output tables and preform the decomposition anlaysis. 
+The water_footprints_sda.R script contains the script to generate the water footprint and perform the strucutral decomposition anlaysis. 
 The graphics_tn.R script creates most of the graphics that are included in the tecnical note. 
 
