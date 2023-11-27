@@ -15,7 +15,7 @@ library(dplyr)
 
 #### Reading OECD input-output tables & Water accounting data #####
   
-  files <- list.files("OriginalData/OCDE/", full.names = FALSE)
+  files <- list.files("OriginalData/OECD/", full.names = FALSE)
   water_files <- list.files("OriginalData/output_WaterData/", full.names = FALSE)
   deflator <- read_excel("OriginalData/Deflation_factors.xlsx", sheet = "Deflator ratios for code")
 
@@ -25,7 +25,7 @@ library(dplyr)
       # Loop through the list of files
       for(i in 1:length(files)){
         # Read the current file
-        df <- read_xlsx(paste0("OriginalData/OCDE/", files[i]), col_types = "numeric")
+        df <- read_xlsx(paste0("OriginalData/OECD/", files[i]), col_types = "numeric")
       
         print(paste0("Iteration: ", i, "  | Economic data: ", files[i], " | Water data : ", water_files[i], "| Deflator: ", colnames(deflator)[i]))
         # Perform any operations on the dataframe
